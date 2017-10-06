@@ -46,38 +46,45 @@ puts "This is the full purchase price for : #{nin_pps}"
 puts space
 
 purchase_history = {
-    "GM" => [],
-    "CAT" => [],
-    "GE" => [],
-    "NIN" => [],
+    "GM" => "#{gm_price}, #{gm_date}, #{gm_stock}",
+    "CAT" => "#{cat_price}, #{cat_date}, #{cat_stock}",
+    "GE" => "#{ge_price}, #{ge_date}, #{ge_stock}",
+    "NIN" => "#{nin_price}, #{nin_date}, #{nin_stock}",
 }
 puts "purchase_history: #{purchase_history}"
 
-if purchase_history == "GM"
-    << gm_price
-    << gm_date
-    << gm_stock
-elsif purchase_history == "CAT"
-    << cat_price
-    << cat_date
-    << cat_stock
-elsif purchase_history == "GE"
-    <<ge_price
-    <<ge_date
-    <<ge_stock
-elsif purchase_history == "NIN"
-    <<nin_price
-    <<nin_date
-    <<nin_stock
-end
-
-puts "purchase_history after conditional: #{purchase_history}"
 
 
 
 
-purchase_history.to_s
-puts purchase_history
+
+
+
+# if purchase_history == "GM"
+#     << gm_price
+#     << gm_date
+#     << gm_stock
+# elsif purchase_history == "CAT"
+#     << cat_price
+#     << cat_date
+#     << cat_stock
+# elsif purchase_history == "GE"
+#     <<ge_price
+#     <<ge_date
+#     <<ge_stock
+# elsif purchase_history == "NIN"
+#     <<nin_price
+#     <<nin_date
+#     <<nin_stock
+# end
+
+# puts "purchase_history after conditional: #{purchase_history}"
+
+
+
+
+# purchase_history.to_s
+# puts purchase_history
 
 # ticker_hash = Hash.new
 
